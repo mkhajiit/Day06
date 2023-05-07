@@ -1,0 +1,18 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>css</title>
+        <style media="screen">
+            p[class~="color"]{font-style:italic;} /*1,2 해당*/
+            p[class^="color"]{font-style:italic;} /*1,3 해당*/
+            p[class$="color"]{font-style:italic;} /*2 해당*/
+            p[class*="color"]{font-style:italic;} /*1,2,3 해당*/
+        </style>
+    </head>
+    <body>
+        <p class="color hot">red</p>
+        <p class="cool color">blue</p>
+        <p class="colorful nature">rain bow</p>
+    </body>
+</html>
